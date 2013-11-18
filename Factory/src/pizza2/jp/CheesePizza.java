@@ -15,7 +15,6 @@ public class CheesePizza extends Pizza {
 		souce = ingredientFactory.createSouce();
 		cheese = ingredientFactory.createCheese();
 		clam = ingredientFactory.createClam();
-		veggies = ingredientFactory.createVeggies();
 	}
 
 }
