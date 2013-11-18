@@ -6,7 +6,7 @@ public class SimplePizzaFactory {
 		Pizza pizza = null;
 
 		if (type.equals("チーズ")) {
-			pizza = new CheesePizza();
+			pizza = new CheesePizza(new NYPizzaIngredientFactory());
 
 		} else if (type.equals("ギリシャ")) {
 			pizza = new GreekPizza();

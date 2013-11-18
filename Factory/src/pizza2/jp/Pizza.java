@@ -2,14 +2,21 @@ package pizza2.jp;
 
 import java.util.ArrayList;
 
-public class Pizza {
+public abstract class Pizza {
 
-	private String name;
-	String dough;
-	String sauce;
+	String name;
+	Dough dough;
+	Souce souce;
+	Veggies veggies[];
+	Cheese cheese;
+	Pepperoni pepperoni;
+	Clams clam;
 	ArrayList toppings = new ArrayList();
 
-	public void prepare() {
+	abstract public void prepare();
+
+	/*
+	{
 		System.out.println(name + "を下処理");
 		System.out.println("生地をこねる……");
 		System.out.println("ソースを追加……");
@@ -18,6 +25,7 @@ public class Pizza {
 			System.out.println(" " + toppings.get(i));
 		}
 	}
+	*/
 
 	public void bake() {
 		System.out.println("350度で25分間焼く");
@@ -37,6 +45,11 @@ public class Pizza {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return null;
 	}
 
 }
