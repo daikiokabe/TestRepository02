@@ -2,6 +2,7 @@ package Factory01.jp;
 
 public abstract class AbstractCreator {
 	private String name;
+	private int check;
 
 	private void mark(WindInstrumentProduct product) {
 		product.setPlate(name);
